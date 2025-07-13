@@ -2,9 +2,11 @@ baseURL = "https://www.catalystedge.org/"
 languageCode = "en-us"
 title = "Catalyst Edge"
 theme = "clarity"
-paginate = 10
 enableRobotsTXT = true
 
+[pagination]
+  pagerSize = 10
+  
 [params]
   description = "Catalyst Edge empowers finance professionals with clarity, growth, and strategic wellbeing."
   favicon = "images/favicon.ico"
