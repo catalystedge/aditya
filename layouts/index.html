@@ -1,39 +1,55 @@
-{{ define "main" }}
-<section class="hero">
-  <div class="container">
-    <h1>Empowering Finance Leaders Through Strategic Learning</h1>
-    <p>Micro-courses, CXO-level insights, and tools that work in the real world.</p>
-    <a href="https://learn.catalystedge.org" class="btn">Explore Learning Portal</a>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalyst Edge | Strategic Learning for Finance Leaders</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Learn What Matters. Lead with Clarity.</h1>
+    <p>Short, actionable courses for finance professionals who want to stay relevant, think strategically, and lead with confidence.</p>
+    <a href="https://learn.catalystedge.org" class="btn">Explore the Learning Portal</a>
+  </header>
 
-<section class="features">
-  <h2>Why Catalyst Edge?</h2>
-  <ul>
-    <li>✅ Built by finance experts, for finance leaders</li>
-    <li>✅ Action-oriented formats</li>
-    <li>✅ 100% online & mobile-friendly</li>
-  </ul>
-</section>
+  <section>
+    <h2>Why Choose Catalyst Edge?</h2>
+    <ul>
+      <li>✅ Built by former bankers, consultants, and CXOs</li>
+      <li>✅ Real-world strategies — not just theory</li>
+      <li>✅ Bite-sized lessons — 15 to 30 minutes</li>
+    </ul>
+  </section>
 
-<section class="courses">
-  <h2>Featured Courses</h2>
-  {{ range first 3 (where .Site.RegularPages "Section" "courses") }}
-    <div class="course-card">
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-      <p>{{ .Params.description }}</p>
-    </div>
-  {{ end }}
-  <a href="/courses" class="btn">View All Courses</a>
-</section>
+  <section>
+    <h2>Popular Courses</h2>
+    <ul>
+      <li><strong>Strategic Finance Thinking</strong> – Sharpen your decision-making mindset</li>
+      <li><strong>Presenting to Boards</strong> – Communicate insights with authority</li>
+      <li><strong>Finance for Non-Finance Teams</strong> – Bridge the gap with clarity</li>
+    </ul>
+    <a href="/courses" class="btn">View All Courses</a>
+  </section>
 
-<section class="testimonials">
-  <h2>What Our Learners Say</h2>
-  <blockquote>“Catalyst Edge helped me rethink strategy in a practical, zero-fluff way.”</blockquote>
-</section>
+  <section>
+    <h2>What Professionals Say</h2>
+    <blockquote>
+      “Catalyst Edge cuts through the noise. As a CFO, I finally found content that respects my time and sharpens my thinking.”
+      <br><small>— R. Mehta, Group CFO</small>
+    </blockquote>
+  </section>
 
-<section class="about">
-  <p>We help mid-to-senior finance professionals simplify complexity, stay relevant, and lead with confidence.</p>
-  <a href="/about" class="btn">Learn More About Us</a>
-</section>
-{{ end }}
+  <section>
+    <h2>About Catalyst Edge</h2>
+    <p>We help mid-to-senior finance professionals stay future-ready through practical, context-aware learning. Whether you're coaching teams or driving transformation, we help you lead with insight.</p>
+    <a href="/about" class="btn">Our Story</a>
+  </section>
+
+  <footer>
+    <h2>Start Learning. Stay Ahead.</h2>
+    <p>Join finance professionals from banking, fintech, and consulting who are leveling up with Catalyst Edge.</p>
+    <a href="https://learn.catalystedge.org" class="btn">Access the Learning Portal</a>
+  </footer>
+</body>
+</html>
