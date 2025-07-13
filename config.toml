@@ -2,43 +2,12 @@ baseURL = "https://www.catalystedge.org/"
 languageCode = "en-us"
 title = "Catalyst Edge"
 theme = "clarity"
+paginate = 10
 enableRobotsTXT = true
-canonifyURLs = true
-
-[pagination]
-  pagerSize = 10
 
 [params]
-  author = "Catalyst Edge"
-  description = "Professional learning programs for mid-to-senior finance professionals and CXOs."
-  favicon = "favicon.ico"
-  logo = "/images/logo.png"
-  dateFormat = "Jan 2, 2006"
-  mainSections = ["blog"]
-  og_image = "/images/og-image.jpg"
-
-[sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
-
-[permalinks]
-  blog = "/blog/:slug/"
-  courses = "/courses/:slug/"
-  resources = "/resources/:slug/"
-  pages = "/:slug/"
-
-[markup]
-  [markup.highlight]
-    noClasses = false
-  [markup.goldmark.renderer]
-    unsafe = true
-
-[minify]
-  disableXML = true
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+  description = "Catalyst Edge empowers finance professionals with clarity, growth, and strategic wellbeing."
+  favicon = "images/favicon.ico"
 
 [menu]
   [[menu.main]]
@@ -47,31 +16,20 @@ canonifyURLs = true
     weight = 1
 
   [[menu.main]]
-    name = "Courses"
-    url = "/courses/"
-    weight = 2
-
-  [[menu.main]]
-    name = "Resources"
-    url = "/resources/"
-    weight = 3
-
-  [[menu.main]]
-    name = "Blog"
-    url = "/blog/"
-    weight = 4
-
-  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 5
+    weight = 2
 
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 6
+    weight = 3
 
-  [[menu.main]]
-    name = "Learning Portal"
-    url = "https://learn.catalystedge.org"
-    weight = 7
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
